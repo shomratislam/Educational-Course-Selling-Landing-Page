@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Course Selling</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!-- Tailwindcss -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @layer base {
+          body {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            color: black;
+          }
+          * {
+            outline: none;
+          }
+        }  
+        @layer utilities {
+          .inter {
+            font-family: "Inter", sans-serif;
+          }
+          .source_sans {
+            font-family: "Source Sans 3", sans-serif;
+          }
+          .poppins {
+            font-family: "Poppins", sans-serif;
+          }
+          .text_bky_blue {
+            color: #1B99D4;
+          }
+          .bg_bky_blue {
+            background-color: #1B99D4;
+          }
+          .container{
+            max-width: 100%;
+            padding-left: 25px;
+            padding-right: 25px;
+          }
+          .child_container{
+            max-width: 1290px;
+            margin: auto;
+          }
+          .custom-bottom-border {
+            border-bottom: 2px dashed #4F419A33;
+          }
+        }
+      </style>   
+      
+</head>
+<body>
+    
+
+  <!-- Header -->
+
+    <div class="container bg-white ">
+
+        <div class="child_container min-h-[76px] flex justify-between items-center py-4">
+
+            <div><a href="#"><img class="w-[164px]" src="./asset/image/site-logo/my_tutor.svg" alt="My Tutor"></a></div>
+          
+            <div class="inter">
+                <ul class="flex items-center gap-11 text-[#424352] font-medium text-base/6">
+                    <li class="hover:text-[#1B99D4] duration-150"><a href="#">About us</a></li>
+                    <li class="hover:text-[#1B99D4] duration-150"><a href="#">Courses</a></li>
+                    <li class="hover:text-[#1B99D4] duration-150"><a href="#">Events</a></li>
+                    <li class="hover:text-[#1B99D4] duration-150"><a href="#">Blogs</a></li>
+                    <a class="font-semibold bg_bky_blue text-white py-[9px] px-5 rounded-[5px] duration-300 hover:bg-black" href="#">Apply Now</a>
+                </ul>     
+            </div>
+
+        </div>
+
+    </div>
+
+
+  <!-- Hero Area -->
+
+    <div class="container bg_bky_blue bg-[url('./asset/image/hero-image/hero_bg.webp')] bg-cover bg-center py-12">
+
+      <div class="child_container flex justify-between items-center gap-5">
+
+        <div class="w-[37%] flex flex-col items-start gap-5 z-1">
+          <h4 class="bg-[#FFFFFF26] rounded-[5px] py-[5px] px-[10px] text-sm tracking-[0.01em] font-medium text-white">Specialization over generalization</h4>
+          <h1 class="text-[42px] leading-[47px] font-bold text-white">Advanced Data Science & AI Course</h1>
+          <p class="text-[17px] leading-6 text-[#FFFFFFCC] font-normal">Equip yourself with data science skills through live, interactive lectures guided by industry expert mentors</p>
+          <h3 class="text-3xl leading-6 tracking-[-0.5%] text-white font-normal mb-4">Live  Interactive Classes</h3>
+          <a class="w-[192px] h-[49px] bg-white rounded-[5px] gap-[5px] flex justify-center items-center text-base text-[#272727] font-medium duration-300 hover:bg-[#FFFFFFCC]" href="#"><img src="./asset/image/icon/download1.svg" alt="icon">Download Brochure</a>
+        </div>
+
+        <div class="w-[25%] flex -mb-12 justify-end self-end z-0"><img class="max-w-[540px]" src="./asset/image/hero-image/man-wearing-t-shirt-gesturing.png" alt="Hero"></div>
+
+        <div class="w-[38%] flex flex-col gap-10 bg-white rounded-[10px] p-8">
+
+          <div class="flex flex-col gap-[15px]">
+            <h3 class="text-[#252525] text-4xl font-bold leading-[33px]">We’re here to help!</h3>
+            <h4 class="text-lg leading-[25px] text-[#252525B3]">Please contact us in case of any query.</h4>
+          </div>
+
+
+          <form action="" class="flex flex-col gap-7 items-start">
+
+            <input class="w-full border border-[#e6e9fc] rounded-[5px] py-[12.5px] px-[12px] text-[#727695] text-[15px] tracking-[-0.5px] font-normal" type="text" placeholder="Your name">
+
+            <input class="w-full border border-[#e6e9fc] rounded-[5px] py-[12.5px] px-[12px] text-[#727695] text-[15px] tracking-[-0.5px] font-normal" type="email" placeholder="Your email address">
+
+            <input class="w-full border border-[#e6e9fc] rounded-[5px] py-[12.5px] px-[12px] text-[#727695] text-[15px] tracking-[-0.5px] font-normal" type="tel" placeholder="Your phone number">
+
+            <div class="relative w-full">
+              <select class="w-full border border-[#e6e9fc] rounded-[5px] py-[12.5px] px-[12px] text-[#727695] text-[15px] tracking-[-0.5px] font-normal appearance-none" name="options">
+                <option value="option1">Select Course</option>
+                <option value="option2">Option Two</option>
+                <option value="option3">Option Three</option>
+              </select>
+  
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center w-[50px] text-[#727695]">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
+
+            <button class="bg_bky_blue w-[156px] h-[43px] rounded-[5px] text-base font-semibold text-white flex items-center justify-center gap-3 cursor-pointer mt-3 hover:bg-black duration-300" type="submit">Get in Touch <img src="./asset/image/icon/right1.svg" alt=""> </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  <!-- 170% Average Salary Hike -->
+
+    <div class="container bg-white py-18">
+
+      <div class="max-w-[1128px] bg-white m-auto flex justify-between items-center gap-5 py-8 px-11 rounded-[10px] shadow-[1px_5px_50px_rgba(84,99,122,0.1)]">
+
+        <div class="flex items-center justify-center gap-5">
+          <img class="w-[58px]" src="./asset/image/icon/line.svg" alt="">
+          <div class="flex flex-col gap-2">
+            <h3 class="text-4xl/8 font-bold text-[#27B94E] tracking-[-0.1px]">126%</h3>
+            <h4 class="text-base text-[#4D607D] font-normal">170% Average Salary Hike</h4>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-5">
+          <img class="w-[58px]" src="./asset/image/icon/bag.svg" alt="">
+          <div class="flex flex-col gap-2">
+            <h3 class="text-4xl/8 font-bold text-[#FFA41B] tracking-[-0.1px]">100+</h3>
+            <h4 class="text-base text-[#4D607D] font-normal">Job Placments</h4>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-5">
+          <img class="w-[58px]" src="./asset/image/icon/live.svg" alt="">
+          <div class="flex flex-col gap-2">
+            <h3 class="text-4xl/8 font-bold text-[#D60000] tracking-[-0.1px]">Live</h3>
+            <h4 class="text-base text-[#4D607D] font-normal">Interactive Sessions</h4>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  <!-- Related Courses -->
+
+    <div class="container bg-[#F8FBFB] py-18">
+
+      <div class="max-w-[1180px] m-auto flex flex-col justify-center items-center gap-14">
+
+        <div class="text-center font-semibold flex flex-col gap-4">
+          <h4 class="poppins text_bky_blue text-base tracking-[1.6px]">RELATED COURSES</h4>
+          <h2 class="text-4xl text-black">Why Join this Program ?</h2>
+        </div>
+
+        <div class="flex gap-9">
+
+          <div class="w-1/3 flex flex-col gap-4 items-center rounded-2xl shadow-[0.91px_4.57px_45.7px_rgba(84,99,122,0.1)] bg-white p-8 text-center duration-300 hover:shadow-[0_20px_45px_-20px_rgba(0,0,0,0.3)]">
+            <div class="flex flex-col gap-5 items-center">
+              <img class="w-[70px]" src="./asset/image/icon/courses.svg" alt="">
+              <h3 class="font-semibold text-[21px] text-black">Real Work Experience</h3>
+            </div>
+            <p class="text-base leading-[23px] text-[#6F6B80]">Work with companies directly on software development projects to master your skills and build a strong project portfolio to get your.</p>
+          </div>
+
+          <div class="w-1/3 flex flex-col gap-4 items-center rounded-2xl shadow-[0.91px_4.57px_45.7px_rgba(84,99,122,0.1)] bg-white p-8 text-center duration-300 hover:shadow-[0_20px_45px_-20px_rgba(0,0,0,0.3)]">
+            <div class="flex flex-col gap-5 items-center">
+              <img class="w-[70px]" src="./asset/image/icon/courses.svg" alt="">
+              <h3 class="font-semibold text-[21px] text-black">Guaranteed job referral</h3>
+            </div>
+            <p class="text-base leading-[23px] text-[#6F6B80]">Our program seeks to eliminate financial risk in the upskilling journey with our guaranteed Job referrals option</p>
+          </div>
+
+          <div class="w-1/3 flex flex-col gap-4 items-center rounded-2xl shadow-[0.91px_4.57px_45.7px_rgba(84,99,122,0.1)] bg-white p-8 text-center duration-300 hover:shadow-[0_20px_45px_-20px_rgba(0,0,0,0.3)]">
+            <div class="flex flex-col gap-5 items-center">
+              <img class="w-[70px]" src="./asset/image/icon/courses.svg" alt="">
+              <h3 class="font-semibold text-[21px] text-black">Crack FAANG Interview</h3>
+            </div>
+            <p class="text-base leading-[23px] text-[#6F6B80]">Interact and Learn from mentors working in top product based companies to crack interviews for your dream role.</p>
+          </div>
+  
+        </div>
+
+      </div>
+
+    </div>
+    
+
+  <!-- Our Alumni Placed -->
+
+    <div class="container bg-white py-18">
+
+      <div class="max-w-[1180px] m-auto flex flex-col justify-center items-center gap-16">
+
+        <div class="text-center font-semibold flex flex-col gap-4">
+          <h4 class="poppins text_bky_blue text-base tracking-[1.6px]">Our Alumni Placed</h4>
+          <h2 class="text-[32px] text-black">Explore Our Alumni & Connect With Them</h2>
+        </div>
+
+        <div class="flex gap-13">
+
+          <div class="w-1/3 rounded-xl shadow-[1px_5px_50px_0px_rgba(84,99,122,0.1)] p-5 duration-300 hover:shadow-[0_20px_45px_-20px_rgba(0,0,0,0.3)]">
+
+            <div class="flex flex-col">
+              <div class="flex justify-between items-start mb-[5px]">
+                <img class="w-[72px]" src="./asset/image/user-Images/shaumaya-qha.png" alt="shaumaya">
+                <div class="flex items-center gap-1.5 border-[1.5px] border-[#369F52] rounded-[2px] px-2 py-[1px]"><img src="./asset/image/icon/line1.svg" alt="line1"> <h4 class="font-semibold poppins text-sm/6 tracking-[0.07px] text-[#43A55D]">120% Hike</h4> </div>
+              </div>
+              <h3 class="text-xl/8 font-semibold tracking-[0.1px]">Shaumaya Qha</h3>
+              <h4 class="text-base/8 font-normal tracking-[0.1px]">Software Engineer</h4>
+              <p class="text-base/6 font-normal text-[#4D607D] tracking-[0.1px]">Apart from regular live classes, I was assigned with a Mentor someone from Microsoft and he guided me very well through out the course.</p>
+            </div>
+
+            <a href="#">
+              <img class="max-w-[272px] mb-4 mt-8" src="./asset/image/logo/Frame 55809 (1).png" alt="logo">
+              <div class="flex items-center gap-2"><img class="max-w-[24px]" src="./asset/image/social-icon/linkedIn-2.svg" alt="linkedIn"> <h5 class="text_bky_blue text-base tracking-[0.5px]">Read full review</h5></div>
+            </a>
+            
+          </div>
+
+          <div class="w-1/3 rounded-xl shadow-[1px_5px_50px_0px_rgba(84,99,122,0.1)] p-5 duration-300 hover:shadow-[0_20px_45px_-20px_rgba(0,0,0,0.3)]">
+
+            <div class="flex flex-col">
+              <div class="flex justify-between items-start mb-[5px]">
+                <img class="w-[72px]" src="./asset/image/user-Images/subhangi-duhan.png" alt="subhangi">
+                <div class="flex items-center gap-1.5 border-[1.5px] border-[#369F52] rounded-[2px] px-2 py-[1px]"><img src="./asset/image/icon/line1.svg" alt="line1"> <h4 class="font-semibold poppins text-sm/6 tracking-[0.07px] text-[#43A55D]">90% Hike</h4> </div>
+              </div>
+              <h3 class="text-xl/8 font-semibold tracking-[0.1px]">Subhangi Duhan</h3>
+              <h4 class="text-base/8 font-normal tracking-[0.1px]">Software Researcher</h4>
+              <p class="text-base/6 font-normal text-[#4D607D] tracking-[0.1px]">My focus and expectations was more into System Design and I have learned a lot of it, Specially High Level design and that helped me to crack Microsoft.</p>
+            </div>
+
+            <a href="#">
+              <img class="max-w-[272px] mb-4 mt-8" src="./asset/image/logo/Frame 55809 (1).png" alt="logo">
+              <div class="flex items-center gap-2"><img class="max-w-[24px]" src="./asset/image/social-icon/linkedIn-2.svg" alt="linkedIn"> <h5 class="text_bky_blue text-base tracking-[0.5px]">Read full review</h5></div>
+            </a>
+            
+          </div>
+
+          <div class="w-1/3 rounded-xl shadow-[1px_5px_50px_0px_rgba(84,99,122,0.1)] p-5 duration-300 hover:shadow-[0_20px_45px_-20px_rgba(0,0,0,0.3)]">
+
+            <div class="flex flex-col">
+              <div class="flex justify-between items-start mb-[5px]">
+                <img class="w-[72px]" src="./asset/image/user-Images/paras-yadav.png" alt="paras">
+                <div class="flex items-center gap-1.5 border-[1.5px] border-[#369F52] rounded-[2px] px-2 py-[1px]"><img src="./asset/image/icon/line1.svg" alt="line1"> <h4 class="font-semibold poppins text-sm/6 tracking-[0.07px] text-[#43A55D]">120% Hike</h4> </div>
+              </div>
+              <h3 class="text-xl/8 font-semibold tracking-[0.1px]">Paras Yadav</h3>
+              <h4 class="text-base/8 font-normal tracking-[0.1px]">Software Tester</h4>
+              <p class="text-base/6 font-normal text-[#4D607D] tracking-[0.1px]">Consistency is the key, that I have
+                learned from my Mentor at My_Tutor. He usually motivates me to be consistent is class and solving problems.</p>
+            </div>
+
+            <a href="#">
+              <img class="max-w-[272px] mb-4 mt-8" src="./asset/image/logo/Frame 55809 (2).png" alt="logo">
+              <div class="flex items-center gap-2"><img class="max-w-[24px]" src="./asset/image/social-icon/linkedIn-2.svg" alt="linkedIn"> <h5 class="text_bky_blue text-base tracking-[0.5px]">Read full review</h5></div>
+            </a>
+            
+          </div>
+
+        </div>
+
+        <div class="mt-5"> <a class="bg_bky_blue flex rounded-[4px] py-[18px] px-6 gap-[14px] text-white poppins text-[18px] font-semibold duration-300 hover:bg-black" href="#">Connect Now <img class="w-[12px]" src="./asset/image/icon/right1.svg" alt=""></a> </div>
+
+      </div>
+
+    </div>
+
+
+  <!-- A Roadmap For Sucess -->
+
+    <div class="container pt-3 pb-20">
+
+      <div class="child_container flex flex-col justify-center items-center gap-16">
+
+        <div class="text-center font-semibold flex flex-col gap-4">
+          <h4 class="poppins text_bky_blue text-base tracking-[1.6px]">A Roadmap For Sucess</h4>
+          <h2 class="text-[32px] text-black">Our Comprehensive curriculum, Designed for professionals</h2>
+        </div>
+
+        <div class="flex gap-19 ">
+
+          <div class="w-[70%] flex flex-col gap-6">
+
+          <h2 class="text-[#333333] font-bold text-2xl leading-[36px]">Course Description</h2>
+          <p class="text-[#6F6B80] text-lg leading-[135%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+
+          <div class="flex flex-col gap-[30px] inter text-[#595665] text-[21px] leading-[24px]">
+
+            <div class="flex gap-3 justify-between items-center border border-[#D9D9D9] rounded-[5px] py-[17px] px-[25px]">
+              <h3>Unit 0 - Foundation Of Programming</h3>
+              <img src="./asset/image/icon/down-arrow.svg" alt="">
+            </div>
+
+            <div class="flex gap-3 justify-between items-center border border-[#D9D9D9] rounded-[5px] py-[17px] px-[25px]">
+              <h3>Unit 1 - Data Structures and Algorithms</h3>
+              <img src="./asset/image/icon/down-arrow.svg" alt="">
+            </div>
+
+            <div class="flex gap-3 justify-between items-center border border-[#D9D9D9] rounded-[5px] py-[17px] px-[25px]">
+              <h3>Unit 2 - System Design in Depth</h3>
+              <img src="./asset/image/icon/down-arrow.svg" alt="">
+            </div>
+
+            <div class="flex gap-3 justify-between items-center border border-[#D9D9D9] rounded-[5px] py-[17px] px-[25px]">
+              <h3>Unit 3 - Advance Data Structures & Algorithms</h3>
+              <img src="./asset/image/icon/down-arrow.svg" alt="">
+            </div>
+
+            <div class="flex gap-3 justify-between items-center border border-[#D9D9D9] rounded-[5px] py-[17px] px-[25px]">
+              <h3>Unit 4 -Electives & Specialization</h3>
+              <img src="./asset/image/icon/down-arrow.svg" alt="">
+            </div>
+
+            <div class="flex gap-3 justify-between items-center border border-[#D9D9D9] rounded-[5px] py-[17px] px-[25px]">
+              <h3>Unit 5 -Work on End to End Projects in Partnership With Startups</h3>
+              <img src="./asset/image/icon/down-arrow.svg" alt="">
+            </div>
+
+          </div>
+
+          </div>
+
+          <div class="w-[30%] shadow-[0_10px_30px_3px_rgba(0,0,0,0.06)] rounded-[4px] border-b-[4px] border-[#1B99D4] p-5">
+
+            <h4 class="text-[#6F6B80] text-lg text-center mt-7">Make Your Design Professional</h4>
+            <form action="" class="flex flex-col gap-7 items-start mt-20">
+
+              <input class="w-full border border-[#e6e9fc] rounded-[5px] py-[12.5px] px-[12px] text-[#727695] text-[15px] tracking-[-0.1px] font-normal" type="text" placeholder="Enter Full Name">
+  
+              <input class="w-full border border-[#e6e9fc] rounded-[5px] py-[12.5px] px-[12px] text-[#727695] text-[15px] tracking-[-0.1px] font-normal" type="email" placeholder="Enter email address">
+  
+              <input class="w-full border border-[#e6e9fc] rounded-[5px] py-[12.5px] px-[12px] text-[#727695] text-[15px] tracking-[-0.1px] font-normal" type="tel" placeholder="Enter phone number">
+  
+              <div class="relative w-full">
+                <select class="w-full border border-[#e6e9fc] rounded-[5px] py-[12.5px] px-[12px] text-[#727695] text-[15px] tracking-[-0.1px] font-normal appearance-none" name="options">
+                  <option value="option1">Select Course</option>
+                  <option value="option2">Option Two</option>
+                  <option value="option3">Option Three</option>
+                </select>
+    
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center w-[50px] text-[#727695]">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </div>
+
+              <input class="w-full border border-[#e6e9fc] rounded-[5px] py-[12.5px] px-[12px] text-[#727695] text-[15px] tracking-[-0.1px] font-normal" type="tel" placeholder="Schedule Date & Time">
+              <p class="text-xs text-[#727695] leading-[18px] -mt-4">By submitting the form, you agree to our Terms and Conditions and our Privacy Policy.</p>
+  
+              <button class="bg_bky_blue w-full h-[43px] rounded-[5px] text-base font-semibold text-white flex items-center justify-center gap-3 cursor-pointer mb-7 hover:bg-black duration-300" type="submit">Apply for Counselling</button>
+  
+            </form>
+
+          </div>
+
+        </div>
+    
+          <a class="justify-center flex items-center gap-[5px] w-[192px] min-h-[49px] border border-[#1B99D4] rounded-[5px] text_bky_blue text-base duration-300 hover:bg-[#ddd] hover:border-[#ddd]" href="#"><img src="./asset/image/icon/download.svg" alt=""> Download Brochure</a>     
+
+      </div>
+
+    </div>
+
+
+  <!-- Hands-on Projects -->
+
+    <div class="container pt-4 pb-10">
+
+      <div class="child_container flex justify-center items-center gap-15">
+
+        <div class="w-[45%] flex flex-col gap-[19px] pr-12">
+          <h2 class="text-5xl/16 tracking-[.25px] font-semibold text-[#000000DE]">Hands-on Projects</h2>
+          <p class="text-base	leading-[32px] text-[#00000099] tracking-[0.5px]">Find out how our Mentor transformed their careers by giving Hands on Projects.</p>
+
+          <div class="flex gap-7">
+            <div class="flex flex-col justify-center items-center rounded-[5px] w-[170px] min-h-[62px] text-white bg-[#20AD96] shadow-[0_7px_29px_rgba(99,99,110,0.2)]">
+              <h3 class="text-[28px] leading-[23px] font-bold pt-[4px]">10+</h3>
+              <h4 class="text-base">Projects</h4>
+            </div>
+  
+            <div class="flex flex-col justify-center items-center rounded-[5px] w-[170px] min-h-[62px] text-white bg-[#9747FF] shadow-[0_7px_29px_rgba(99,99,110,0.2)]">
+              <h3 class="text-[28px] leading-[23px] font-bold pt-[4px]">06+</h3>
+              <h4 class="text-base">Domains</h4>
+            </div>
+          </div>
+
+          <div class="flex">
+            <img class="-mx-6" src="./asset/image/icon/l-slider-nav.svg" alt="slider">
+            <img src="./asset/image/icon/r-slider-nav.svg" alt="slider">
+          </div>
+
+        </div>
+
+        <div class="w-[55%] p-10 shadow-[1px_5px_50px_rgba(84,99,122,0.1)] flex flex-col gap-[22px] rounded-[10px] ">
+
+          <h3 class="text-[22px] text-[#727695] font-bold">Authentication</h3>
+          <img class="w-[220px]" src="./asset/image/logo/image.png" alt="image">
+          <p class="max-w-[440px] text-[#646464] text-base leading-[23px]">Create authentication technology to give access, Correspond to those stored in a database of authorized users.</p>
+          <div class="flex items-center gap-[10px]">
+            <h4 class="text-[#646464] leading-[23px] text-lg font-medium">Tools:</h4>
+            <img class="w-[192px]" src="./asset/image/logo/4-logo.svg" alt="logo-4">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  <!-- Course Highlights -->
+
+
+    <div class="container py-20">
+
+      <div class="child_container flex justify-center gap-[55px]">
+
+        <div class="w-[25%] flex flex-col gap-7 border border-[#D9D9D9] rounded-lg p-7">
+
+          <h2 class="text_bky_blue text-lg font-semibold leading-[23px]">Course Highlights</h2>
+
+          <div class="flex flex-col gap-4">
+
+            <div class="flex items-center gap-[10px]">
+              <img src="./asset/image/icon/350+live-sessions.svg" alt="sessions">
+              <h4 class="text-[#646464] text-base	leading-[23px]">350+ Live sessions</h4>
+            </div>
+
+            <div class="flex items-center gap-[10px]">
+              <img src="./asset/image/icon/15+Industry-projects.svg" alt="15+ Industry Projects">
+              <h4 class="text-[#646464] text-base	leading-[23px]">15+ Industry Projects</h4>
+            </div>
+
+            <div class="flex items-center gap-[10px]">
+              <img src="./asset/image/icon/life-time-accessibility.svg" alt="Life time accessibility">
+              <h4 class="text-[#646464] text-base	leading-[23px]">Life time accessibility</h4>
+            </div>
+
+            <div class="flex items-center gap-[10px]">
+              <img src="./asset/image/icon/live-project-experience.svg" alt="Live project experience">
+              <h4 class="text-[#646464] text-base	leading-[23px]">Live project experience</h4>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="w-[75%] border border-[#D9D9D9] rounded-lg p-9 flex flex-col justify-center gap-[25px]">
+
+          <p class="text-[#646464] text-base/6 max-w-[750px]">We are driven by the idea of program affordability. So, we give you several financial options to manage and budget the expenses of your course.</p>
+
+          <div class="flex justify-between items-end">
+
+            <div class="flex flex-col gap-[15px] text-[#2C2C2C]">
+              <h3 class="text-[27px] font-bold">Starting at ₹ 120,000 + GST</h3>
+              <h4 class=" text-base	leading-[23px]">EMI starting from: ₹ 5,900/month</h4>
+            </div>
+
+            <div>
+              <a class="flex justify-center items-center font-medium text-base bg_bky_blue text-white min-w-[112px] min-h-[43px] rounded-[5px] duration-300 hover:bg-black" href="#">Apply Now</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  <!-- Next Cohort Details -->
+
+    <div class="container py-20">
+
+      <div class="child_container flex flex-col items-center justify-center gap-7">
+
+        <div>
+          <h2 class="font-semibold text-4xl	">Next Cohort Details</h2>
+        </div>
+
+        <div class="w-[904px] m-auto overflow-hidden">
+
+          <div class="flex justify-between items-center text-[#272727] py-5 px-11 border-t border-l border-r border-solid border-b-0 border-[#4F419A33] custom-bottom-border rounded-tr-lg rounded-tl-lg">
+
+            <h3 class="flex font-bold gap-1 text-5xl	">19 <span class="mt-[6px] text-[12.72px] font-medium tracking-[3.63px]">MAR</span></h3>
+
+            <h3 class="text-2xl font-medium">Weekend Batch [Sat - Sun]</h3>
+
+            <a class="flex justify-center items-center font-medium text-xs leading-6 bg_bky_blue text-white py-[5px] px-[15px] rounded-[3px] duration-300 hover:bg-black" href="#">Enroll Now</a>    
+
+          </div>
+
+          <div class="flex justify-between items-center py-9 px-11 relative border-b border-l border-r border-solid border-t-0 border-[#4F419A33] rounded-br-lg rounded-bl-lg">
+
+            <div class="w-[18px] h-[18px] border border-[#D9D9D9] rounded-full bg-white absolute absolute -top-[10px] -left-[8px]"></div>
+            <div class="w-[18px] h-[18px] border border-[#D9D9D9] rounded-full bg-white absolute absolute -top-[10px] -right-[8px]"></div>
+
+            <div>
+              <h3 class="text-[#272727] text-[15px] leading-[23px] font-medium">Batch</h3>
+              <h4 class="text-[#777D8C] text-lg/6">Morning</h4>
+            </div>
+
+            <div>
+              <h3 class="text-[#272727] text-[15px] leading-[23px] font-medium">Time</h3>
+              <h4 class="text-[#777D8C] text-lg/6">09:00 am-12:00 pm</h4>
+            </div>
+
+            <div>
+              <h3 class="text-[#272727] text-[15px] leading-[23px] font-medium">Seat</h3>
+              <h4 class="text-[#777D8C] text-lg/6">Available</h4>
+            </div>
+
+            <div>
+              <h3 class="text-[#272727] text-[15px] leading-[23px] font-medium">Venue</h3>
+              <h4 class="text-[#777D8C] text-lg/6">Virtual  Hall</h4>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  <!-- DISCOVER OUR MENTORS -->
+
+    <div class="container pt-4 pb-20">
+
+      <div class="max-w-[990px] m-auto flex flex-col items-center justify-center gap-16">
+
+        <div class="w-full text-center poppins text-base font-semibold">
+          <h4 class="text_bky_blue leading-[26px] tracking-[1.6px]">DISCOVER OUR MENTORS</h4>
+          <h2 class="text-[#231F40] text-[32px] leading-[42px] mt-2">We have Industry Experts as Mentor who guide you with Career Planning & Interview Preparation</h2>
+        </div>
+
+        <div class="flex gap-12">
+
+          <div class="flex flex-col justify-between shadow-[1px_5px_30px_rgba(84,99,122,0.2)] rounded-[9px] overflow-hidden">
+
+            <div class="flex flex-col gap-[15px]">
+
+              <img src="./asset/image/user-Images/sachin-sharma.png" alt="sachin">
+
+              <div class="flex justify-between px-[15px]">    
+                <div class="tracking-[0.1px]">
+                  <h3 class="text-[20px] leading-6 font-semibold">Sachin Sharma</h3>
+                  <h4 class="text-[#00000080] text-sm/6">Managing Director</h4>
+                </div>
+  
+                <div>
+                  <img src="./asset/image/logo/microsoft.svg" alt="microsoft">
+                </div>
+  
+              </div>
+
+            </div>
+                  
+            <div class="flex items-center gap-[7px] px-[15px] pb-[15px] mt-4">
+                <img class="w-[18px]" src="./asset/image/social-icon/linkedIn-2.svg" alt="linkedIn">
+                <h5 class="source_sans text_bky_blue text-[13px] leading-[21px] tracking-[0.38px]">View Profile</h5>
+            </div>
+
+          </div>
+
+          <div class="flex flex-col justify-between shadow-[1px_5px_30px_rgba(84,99,122,0.2)] rounded-[9px] overflow-hidden">
+
+            <div class="flex flex-col gap-[15px]">
+
+              <img src="./asset/image/user-Images/santosh-kumar-mishra.png" alt="Santosh">
+
+              <div class="flex justify-between px-[15px]">    
+                <div class="tracking-[0.1px]">
+                  <h3 class="text-[20px] leading-6 font-semibold">Santosh Kumar Mishra</h3>
+                  <h4 class="text-[#00000080] text-sm/6">Managing Director</h4>
+                </div>
+  
+                <div>
+                  <img src="./asset/image/logo/microsoft.svg" alt="microsoft">
+                </div>
+  
+              </div>
+
+            </div>
+                  
+            <div class="flex items-center gap-[7px] px-[15px] pb-[15px] mt-4">
+                <img class="w-[18px]" src="./asset/image/social-icon/linkedIn-2.svg" alt="linkedIn">
+                <h5 class="source_sans text_bky_blue text-[13px] leading-[21px] tracking-[0.38px]">View Profile</h5>
+            </div>
+
+          </div>
+
+          <div class="flex flex-col justify-between shadow-[1px_5px_30px_rgba(84,99,122,0.2)] rounded-[9px] overflow-hidden">
+
+            <div class="flex flex-col gap-[15px]">
+
+              <img src="./asset/image/user-Images/prem-pumar.png" alt="Prem">
+
+              <div class="flex justify-between px-[15px]">    
+                <div class="tracking-[0.1px]">
+                  <h3 class="text-[20px] leading-6 font-semibold">Prem Kumar</h3>
+                  <h4 class="text-[#00000080] text-sm/6">Mentorship</h4>
+                </div>
+  
+                <div>
+                  <img src="./asset/image/logo/microsoft.svg" alt="microsoft">
+                </div>
+  
+              </div>
+
+            </div>
+                  
+            <div class="flex items-center gap-[7px] px-[15px] pb-[15px] mt-4">
+                <img class="w-[18px]" src="./asset/image/social-icon/linkedIn-2.svg" alt="linkedIn">
+                <h5 class="source_sans text_bky_blue text-[13px] leading-[21px] tracking-[0.38px]">View Profile</h5>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="flex flex-col gap-11 -mt-2">
+
+          <img class="w-[69px] m-auto" src="./asset/image/icon/dot.svg" alt="dot">
+
+          <a class="bg_bky_blue flex rounded-[4px] py-[18px] px-6 text-white poppins text-[18px] font-semibold duration-300 hover:bg-black" href="#">More Mentor Details</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  <!-- Thousands of stories of growth -->
+
+    <div class="container py-20">
+
+      <div class="child_container flex gap-20 overflow-hidden">
+
+        <div class="w-[48%] pr-12">
+          <h2 class="text-5xl/16 tracking-wide font-bold inter mb-4">Thousands of stories of growth</h2>
+          <p class="text-[#00000099] poppins text-base/9">Find out how our Learners transformed their careers after learning witH us.</p>
+        </div>
+
+        <div class="w-[52%] shadow-[10px_0px_40px_0_rgba(84,99,122,0.1)] rounded-[10px] p-5 flex flex-col gap-6 mr-5">
+          <img class="w-[50px]" src="./asset/image/icon/quotation.svg" alt="quotation">
+          <p class="text-base inter text-[#767676] font-medium leading-[26px]">“As a senior engineer I have specially reviewed the System Design content and live classes of My_Tutor and I found it more on the implementation side instead of theoretical concepts which helps to work in real-time environment in the organization. I would recommend My_Tutor course to get expertise in System Design.”</p>
+
+          <div class="flex justify-between ">
+
+            <div class="flex items-center gap-5">
+              <img class="w-16 h-16 rounded-full" src="./asset/image/user-Images/prem-pumar.png" alt="pumar">
+              <div>
+                <h4 class="font-semibold text-xl/5 poppins text_bky_blue mb-[10px]">Prem Kumar</h4>
+                <img class="" src="./asset/image/icon/star-rating.svg" alt="star">
+              </div>
+            </div>
+  
+            <div class="flex items-center gap-[7px] px-[15px] pb-[15px] mt-4">
+              <img class="w-[24px]" src="./asset/image/social-icon/linkedIn-2.svg" alt="linkedIn">
+              <h5 class="source_sans text_bky_blue text-[18px] leading-[28px] tracking-[0.38px]">View Profile</h5>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  <!-- Frequently Asked Questions -->
+
+    <div class="container pt-12 pb-21">
+
+      <div class="max-w-[1060px] m-auto flex flex-col gap-18">
+
+        <div class="text-center poppins font-semibold">
+          <h3 class="text_bky_blue text-base leading-[26px] tracking-[1.6px]">ASK YOUR QUESTIONS</h3>
+          <h2 class="text-[#231F40] text-[40px] leading-14 mt-2">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="w-full inter flex flex-col gap-[35px]">
+
+          <div class="w-full flex gap-3 items-center border border-[#dfdfdf] min-h-[65px] p-4">
+            <img class="w-5 h-5" src="./asset/image/icon/plus.svg" alt="plus">
+            <h4 class="text-[#212121] text-xl/7 font-medium">How to enroll for a Course?</h4>
+          </div>
+
+          <div class="w-full flex gap-3 items-center border border-[#dfdfdf] min-h-[65px] p-4">
+            <img class="w-5 h-5" src="./asset/image/icon/plus.svg" alt="plus">
+            <h4 class="text-[#212121] text-xl/7 font-medium">Can I get the recordings of my previous lectures?</h4>
+          </div>
+
+          <div class="w-full flex gap-3 items-center border border-[#dfdfdf] min-h-[65px] p-4">
+            <img class="w-5 h-5" src="./asset/image/icon/plus.svg" alt="plus">
+            <h4 class="text-[#212121] text-xl/7 font-medium">Who would be the instructor for enrolled course?</h4>
+          </div>
+
+          <div class="w-full flex gap-3 items-center border border-[#dfdfdf] min-h-[65px] p-4">
+            <img class="w-5 h-5" src="./asset/image/icon/plus.svg" alt="plus">
+            <h4 class="text-[#212121] text-xl/7 font-medium">What kind of placement support will be given post completion of program?</h4>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  <!-- Footer -->
+
+    <div class="container pt-30 pb-8 bg_bky_blue inter relative">
+      <img class="absolute -top-10 -left-5" src="./asset/image/icon/shape-footer.png" alt="shape">
+
+      <div class="child_container flex justify-between gap-20 text-white ">
+
+          <div class="w-[27%] flex flex-col gap-5">
+            <img class="w-[164px]" src="./asset/image/site-logo/my_tutor_2.svg" alt="">
+            <p class="text-base leading-[28.5px]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+            <div class="flex gap-[15px] mt-10">
+              <a href="#"><img src="./asset/image/social-icon/facebook.svg" alt="facebook"></a>
+              <a href="#"><img src="./asset/image/social-icon/linkedIn.svg" alt="linkedIn"></a>
+              <a href="#"><img src="./asset/image/social-icon/pinterest.svg" alt="pinterest"></a>
+              <a href="#"><img src="./asset/image/social-icon/x.svg" alt="x"></a>
+            </div>
+          </div>
+  
+          <div class="w-[20%]">
+            <h3 class="font-semibold text-2xl/9 mb-8">Explore</h3>
+            <ul class="text-base leading-[26px] flex flex-col gap-[21px]">
+              <li><a class="flex gap-3" href="#"><img class="w-[12px]" src="./asset/image/icon/double-arrow.svg"> About Us</a></li>
+              <li><a class="flex gap-3" href="#"><img class="w-[12px]" src="./asset/image/icon/double-arrow.svg"> Blog</a></li>
+              <li><a class="flex gap-3" href="#"><img class="w-[12px]" src="./asset/image/icon/double-arrow.svg"> Campus Program</a></li>
+              <li><a class="flex gap-3" href="#"><img class="w-[12px]" src="./asset/image/icon/double-arrow.svg"> Become a Mentor</a></li>
+              <li><a class="flex gap-3" href="#"><img class="w-[12px]" src="./asset/image/icon/double-arrow.svg"> Contact us</a></li>
+              <li><a class="flex gap-3" href="#"><img class="w-[12px]" src="./asset/image/icon/double-arrow.svg"> Hire From us</a></li>
+            </ul>
+          </div>
+  
+          <div class="w-[23%]">
+            <h3 class="font-semibold text-2xl/9 mb-8">Useful Links</h3>
+            <ul class="text-base leading-[26px] flex flex-col gap-[21px]">
+              <li><a class="flex gap-3" href="#"><img class="w-[12px]" src="./asset/image/icon/double-arrow.svg"> Privacy Policy</a></li>
+              <li><a class="flex gap-3" href="#"><img class="w-[12px]" src="./asset/image/icon/double-arrow.svg"> Terms of use</a></li>
+              <li><a class="flex gap-3" href="#"><img class="w-[12px]" src="./asset/image/icon/double-arrow.svg"> Refund Policy</a></li>
+            </ul>
+          </div>
+  
+          <div class="w-[30%]">
+            <h3 class="font-semibold text-2xl/9 mb-8">Contact Info</h3>
+            <ul class="text-base leading-[26px] flex flex-col gap-[21px]">
+              <li><a class="flex items-start gap-[10px]" href="#"><img class="w-[22px] mt-1" src="./asset/image/icon/map.svg"> 4517 Washington Ave. Manchester, Kentucky 39495</a></li>
+              <li><a class="flex gap-[10px]" href="#"><img class="w-[16px]" src="./asset/image/icon/phone.svg"> +91-9024250272</a></li>
+              <li><a class="flex gap-[10px]" href="#"><img class="w-[15px]" src="./asset/image/icon/email.svg"> shubhammodi820@gmail.com</a></li>
+            </ul>
+          </div>
+
+      </div>
+
+      <div class="mt-20">
+        <h6 class="text-center text-white text-base/6">Copyright 2024 My_Tutor| Designed By Shubham Modi.</h6>
+      </div>
+
+    </div>
+
+</body>
+</html>
